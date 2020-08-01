@@ -18,8 +18,7 @@ public class StringsCounterController {
         this.textSpecialFormatter = textSpecialFormatter;
     }
 
-    @PostMapping("/")
-    @ResponseBody
+    @PostMapping
     public List<String> parseStrings(@RequestBody ArrayList<String> strings) {
         return textSpecialFormatter.format(strings);
     }

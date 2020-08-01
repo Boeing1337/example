@@ -8,8 +8,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/")
 public class IndexController {
 
-    @GetMapping("api")
+    @GetMapping
     private String getIndex() {
-        return "test.html";
+        return "index.html";
     }
 }

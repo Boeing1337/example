@@ -19,7 +19,7 @@ public class MonthController {
         this.stringSeparator = stringSeparator;
     }
 
-    @GetMapping("/")
+    @GetMapping
     public String parseStrings(@RequestParam String monthNumber) {
         final String month = calendar.getMonth(monthNumber);
         if (month == null)
