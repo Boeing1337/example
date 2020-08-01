@@ -1,0 +1,60 @@
+<html lang="en" data-url="http://localhost:8080/login">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Choosing</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link href="https://getbootstrap.com/docs/4.0/examples/signin/signin.css" rel="stylesheet" crossorigin="anonymous">
+    <style data-cbh-dummy="dummy" type="text/css"></style>
+    <style data-cbh-dummy="dummy" type="text/css">*[data-cbh-blocked] {
+        display: none !important;
+    }
+
+    body {
+        background-color: #3e3e3e;
+        color: white;
+    }
+
+
+    textarea {
+        width: 400px;
+        overflow-x: scroll;
+        white-space: pre;
+    }
+
+    .child {
+        float: left;
+        width: 50%;
+        text-align: center;
+
+    }
+
+    </style>
+</head>
+<body>
+
+<div class="container" style="width: 75%">
+    <h2 style="text-align: center">Для теста</h2>
+    <div class="parent">
+        <div class="child">
+            <p style="text-align: center"><b>Узнать месяц по номеру</b></p>
+
+            <form action="/api/month/" method="get">
+                <div>
+                    <label>
+                        <input name="monthNumber">
+                    </label>
+                </div>
+
+                <div>
+                    <button class="btn btn-lg btn-primary" type="submit">Execute</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>
